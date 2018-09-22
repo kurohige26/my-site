@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+{% load staticfiles %}
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Vetores</title>
+</head>
+<body>
+    <form id="formCriaVetor" method="POST" action="{% url 'ordena' %}">
+        {% csrf_token %}
+        <input name="inputVetor" type="text">
+        <a name="ordena_vetor" onclick="enviaForm()">Ordenar Vetor</a>
+    </form>
+</body>
+<script type="text/javascript" src="{% static 'vetor.js' %}"></script>
+</html>
+ffafaf
